@@ -1,4 +1,4 @@
-const apiKey = "hiJqIHsYwkie5YYpDcESY45F7M9c13o3SeCdH4Nc";
+const apiKey = //you api Key here
 const searchURL = "https://developer.nps.gov/api/v1/parks";
 
 function formatQueryParams(params) {
@@ -17,7 +17,7 @@ function displayResults(responseJson) {
       <li><h3>${responseJson.data[i].fullName}</h3></li>
       <ul>
         <li>${responseJson.data[i].description}</li>
-        <a><li>${responseJson.data[i].url}</li></a>
+        <li>${responseJson.data[i].url}</li>
         <li>${responseJson.data[i].latLong}</li>
       </ul>
       `);}
